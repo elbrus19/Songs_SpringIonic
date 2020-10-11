@@ -12,10 +12,6 @@ This is a proyect that is divided into a backend and frontend and this project i
 
 * [Mysql Workbench](https://www.mysql.com/products/workbench/) - Mysql Workbench 8.0 CE
 
-
-## Links to Projects
-
-
 ## Acknowledgments
 
 * To ionic framework: https://ionicframework.com/
