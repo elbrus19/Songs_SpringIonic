@@ -1,0 +1,163 @@
+{
+	"info": {
+		"_postman_id": "ca0b3c1f-dfb9-4dd3-ad35-c7f56181da75",
+		"name": "2DAMTarde-PGV_PGL_Songs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/api/songs",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/songs",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"songs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/songs",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Blanco",
+							"type": "text"
+						},
+						{
+							"key": "artist",
+							"value": "J Balvin",
+							"type": "text"
+						},
+						{
+							"key": "lenght",
+							"value": "2:43",
+							"type": "text"
+						},
+						{
+							"key": "year",
+							"value": "2020",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/songs",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"songs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/songs/2",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/songs/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"songs",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/songs/1",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Amarillo",
+							"type": "text"
+						},
+						{
+							"key": "artist",
+							"value": "J Balvin",
+							"type": "text"
+						},
+						{
+							"key": "lenght",
+							"value": "2:43",
+							"type": "text"
+						},
+						{
+							"key": "year",
+							"value": "2020",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/songs/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"songs",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/songs/Amarillo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/songs/Roxanne",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"songs",
+						"Roxanne"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

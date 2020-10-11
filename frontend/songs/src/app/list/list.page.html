@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Tus Canciones Favoritas</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card *ngFor="let s of songs">
+    <ion-card-header>
+      <ion-card-title>{{s.name}} <ion-icon name="musical-notes-outline"></ion-icon></ion-card-title>
+      <ion-card-subtitle>{{s.artist}}</ion-card-subtitle>
+      <ion-item>
+        
+      </ion-item>
+    </ion-card-header>
+
+    <ion-card-content>
+      name: {{s.name}}<br />
+      artist: {{s.artist}}<br />
+      lenght:{{s.lenght}}<br />
+      year:{{s.year}}<br />
+      <ion-item>
+        <ion-icon (click)="deleteSong(s.id)" name="trash" slot="end"></ion-icon>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+  <ion-button (click)="insertSong()" expand="full">Añadir Canción</ion-button>
+</ion-content>
